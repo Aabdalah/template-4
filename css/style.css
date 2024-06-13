@@ -13,12 +13,13 @@ body::-webkit-scrollbar-thumb:hover{
 :root{
     --blue:#0075ff;
     --dark-blue:#0069e0;
+    --border-color : #bbb
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "OpenSans",sans-serif;
+    font-family: "Open Sans",sans-serif;
 }
 
 ul{
@@ -129,7 +130,7 @@ header{
     background-color: white;
 }
 header form{
-    border: 1px solid #bbb;
+    border: 1px solid var(--border-color);
     padding: 10px 10px;
     border-radius: 8px;
     display: flex;
@@ -456,8 +457,41 @@ article:nth-child(3) .card:nth-child(3) span p{
 article:nth-child(3) .card:nth-child(3) span p::before{
     border-top-color: #4bcd7c;
 }
-
-
-
 /*third article end*/
+/*fourth article start*/
+article:nth-child(4) .card-container{
+    width: 100%;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+article:nth-child(4) .card{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+article:nth-child(4) .card i{
+    font-size: 26px;
+}
+article:nth-child(4) .card h3{
+    font-size: 25px;
+}
+article:nth-child(4) .card p{
+    margin: 0;
+    font-size: 14px;
+}
+@media (max-width:767px){
+    article:nth-child(4) .card-container{
+        grid-template-columns: 1fr;
+    }
+    article:nth-child(4) .card h3{
+        margin: 15px 0 10px 0;
+    }
+}
+/*fourth article end*/
 /*section end*/
