@@ -647,7 +647,7 @@ article:nth-child(9) .cirlce{
 article:nth-child(9) .cirlce:not(.last)::after{
     content: "";
     width: 2px;
-    height: 27px;
+    height: 40px;
     position: absolute;
     top: 100%;
     left:50%;
@@ -719,6 +719,7 @@ article:nth-child(10) .section-list-item:nth-child(4) span:after{
 /*elventh article start*/
 article:nth-child(11){
     min-height: 350px;
+    gap: 10px;
 }
 article:nth-child(11) .post-header{
     width: 100%;
@@ -744,6 +745,8 @@ article:nth-child(11) .post-main{
     font-weight: 500;
     line-height: 1.8;
     flex-grow: 1;
+    display: flex;
+    padding: 10px 0;
 }
 article:nth-child(11) .post-footer{
     color: #999999;
