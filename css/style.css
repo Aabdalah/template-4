@@ -221,6 +221,7 @@ section article{
     border-radius: 10px;
     padding: 20px;
     overflow: hidden;
+    min-height: 350px;
 }
 section article:first-child{
     padding: 0;
@@ -718,7 +719,6 @@ article:nth-child(10) .section-list-item:nth-child(4) span:after{
 /*tenth article end*/
 /*elventh article start*/
 article:nth-child(11){
-    min-height: 350px;
     gap: 10px;
 }
 article:nth-child(11) .post-header{
