@@ -66,14 +66,14 @@ main .check-container{
 .check-container i:last-child{
     opacity: 0;
 }
-.lable-input:checked + .check-container{
+article:nth-child(1) .lable-input:checked + .check-container{
     background-color: #cccccc;
 }
-.lable-input:checked + .check-container i{
+article:nth-child(1) .lable-input:checked + .check-container i{
     right: calc(100% - 36px);
     opacity: 0;
 }
-.lable-input:checked + .check-container i:last-child{
+article:nth-child(1) .lable-input:checked + .check-container i:last-child{
     opacity: 1;
 }
 /* first article end */
@@ -148,6 +148,16 @@ article:nth-child(3) li a{
 article:nth-child(3) li:last-child a{
     background-color: #eee;
     color: black;
+}
+article:nth-child(3) .lable-input:checked + .check-container{
+    background-color: #cccccc;
+}
+article:nth-child(3) .lable-input:checked + .check-container i{
+    right: calc(100% - 36px);
+    opacity: 0;
+}
+article:nth-child(3) .lable-input:checked + .check-container i:last-child{
+    opacity: 1;
 }
 /* third article end */
 /* fourth article start */
