@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/settings.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -108,9 +109,117 @@
         <!--title start-->
         <div class="title">
             <h1>Settings</h1>
-            <span></span>
+            <span class="bar"></span>
         </div>
         <!--title end-->
+        <!--section start-->
+        <section>
+            <!-- first-article start -->
+            <article>
+                <div class="header">
+                    <h2>Site Control</h2>
+                    <p>Control The Website If There Is Maintenance</p>
+                </div>
+                <div>
+                    <div class="text">
+                        <h3>Website Control</h3>
+                        <p>Open/Close Website And Type The Reason</p>
+                    </div>
+                    <input type="checkbox" id="check" class="lable-input">
+                    <label class="check-container" for="check">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </label>
+                </div>
+                <textarea name="close" id="close" placeholder="Close Message Content"></textarea>
+            </article>
+            <!-- first-article end -->
+            <!-- second-article start -->
+             <article>
+                <div class="header">
+                    <h2>General Info</h2>
+                    <p>General Information About Your Account</p>
+                </div>
+                <form action="#">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="First Name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Last Name">
+                    <div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" disabled id="email" placeholder="o@nn.sa">
+                        </div>
+                        <a href="#"><span>Change</span></a>
+                    </div>
+                </form>
+             </article>
+             <!-- second-article end -->
+             <!-- third-article start -->
+             <article>
+                <div class="header">
+                    <h2>Security Info</h2>
+                    <p>Security Information About Your Account</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="text">
+                            <h3>Password</h3>
+                            <p>Last Change On 25/10/2021</p>
+                        </div>
+                        <a href="#">Change</a>
+                    </li>
+                    <li>
+                        <div class="text">
+                            <h3>Two-Factor Authentication</h3>
+                            <p>Enable/Disable The Feature</p>
+                        </div>
+                        <input type="checkbox" id="check" class="lable-input">
+                        <label class="check-container" for="check">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <div class="text">
+                            <h3>Devices</h3>
+                            <p>Check The Login Devices List</p>
+                        </div>
+                        <a href="#">Devices</a>
+                    </li>
+                </ul>
+             </article>
+             <!-- third-article end -->
+             <!-- fourth-article start -->
+             <article>
+                <div class="header">
+                    <h2>Social Info</h2>
+                    <p>Social Media Information</p>
+                </div>
+                <div class="input">
+                    <label for="twitter">
+                        <input type="text" name="twitter" id="twitter" placeholder="Twitter Username">
+                        <i class="fa-brands fa-twitter"></i>
+                    </label>
+                    <label for="facebook">
+                        <input type="text" name="facebook" id="facebook" placeholder="Facebook Username">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </label>
+                    <label for="linkedin">
+                        <input type="text" name="linkedin" id="linkedin" placeholder="Linkedin Username">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </label>
+                    <label for="youtube">
+                        <input type="text" name="youtube" id="youtube" placeholder="Youtube Username">
+                        <i class="fa-brands fa-youtube"></i>
+                    </label>
+                </div>
+             </article>
+             <!-- fourth-article end -->
+             <article></article>
+             <article></article>
+        </section>
+        <!--section end-->
     </main>
 </body>
 
