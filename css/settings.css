@@ -197,3 +197,126 @@ article:nth-child(4) .input label input:focus + i{
     color: black;
 }
 /* fourth article end */
+/* fivth article start */
+article:nth-child(5) input{
+    display: none;
+}
+article:nth-child(5)>div:not(.header){
+    margin-left: 10px;
+}
+article:nth-child(5) label{
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+article:nth-child(5) label:hover .check-box-container{
+    border-color: var(--blue);
+}
+article:nth-child(5) .check-box-container{
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    position: relative;
+    border: 2px solid black;
+    /* overflow: hidden; */
+    transition: border-color 0.3s;
+}
+article:nth-child(5) .check-box-container i{
+    color: white;
+    background-color: var(--blue);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: scale 0.3s, transform 0.3s;
+    transform-origin: 0% 0%;
+    scale: 1;
+    font-size: 12px;
+    transform: rotate(0deg) translate(-50%,-50%);
+}
+article:nth-child(5) input:checked + .custome-check-box .check-box-container{
+    border-color: var(--dark-blue);
+}
+article:nth-child(5) input:not(:checked) + .custome-check-box .check-box-container i{
+    scale: 0;
+    transform: rotate(360deg) translate(-50%,-50%);
+}
+/* fivth article end */
+/* sixth article start */
+article:nth-child(6) input{
+    display: none;
+}
+article:nth-child(6) .lable-container{
+    border-bottom: 1px solid #ddd;
+}
+article:nth-child(6) label{
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+article:nth-child(6) .lable-container .radio-box-container{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid black;
+    transition: border-color 0.3s;
+}
+article:nth-child(6) .lable-container .radio-box-container::before{
+    content: "";
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    scale: 0;
+    transition: scale 0.3s, background-color 0.3s;
+}
+article:nth-child(6) input:checked + .custome-radio-box .radio-box-container{
+    border-color: var(--dark-blue);
+}
+article:nth-child(6) input:checked + .custome-radio-box .radio-box-container::before{
+    scale: 1;
+    background-color: var(--dark-blue);
+}
+.lable-container-2{
+    display: flex;
+}
+.lable-container-2>div{
+    flex-basis: 100%;
+}
+.lable-container-2>div label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ddd;
+    padding: 15px 0;
+    border-radius: 5px;
+    transition: color 0.3s,border-color 0.3s;
+}
+.lable-container-2>div label i{
+    margin-bottom: 15px;
+}
+article:nth-child(6) input:checked + label{
+    border-color: var(--blue);
+    color: var(--blue);
+}
+@media (max-width:768px) {
+    .lable-container-2{
+        flex-direction: column;
+    }
+}
+/* sixth article end */
