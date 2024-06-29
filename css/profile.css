@@ -1,5 +1,5 @@
 section{
-    grid-template-columns: minmax(165px, 410px) minmax(300px, 1fr);
+    grid-template-columns: 1fr 1.9fr;
 }
 article .header h2{
     font-weight: 700;
@@ -190,3 +190,94 @@ article:nth-child(1) .profile-info>div .check-container{
     }
 }
 /* first article end */
+/* second article start */
+article:nth-child(2) ul{
+    margin-top: 15px;
+}
+article:nth-child(2) ul li{
+    padding: 13px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+article:nth-child(2) ul li:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+article:nth-child(2) ul p{
+    color: black;
+    font-size: 14px;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+@media (max-width:768px) {
+    article:nth-child(2) ul li{
+        justify-content: center;
+    }
+}
+/* second article end */
+/* third article start */
+article:nth-child(3) ul{
+    margin-top: 5px;
+}
+article:nth-child(3) ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+article:nth-child(3) ul li h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+article:nth-child(3) ul li .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+article:nth-child(3) ul li .text p{
+    margin-top: 10px;
+}
+article:nth-child(3) ul li p{
+    font-size: 16px;
+    font-weight: 500;
+}
+article:nth-child(3) ul li .time p:first-of-type{
+    text-align: right;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+article:nth-child(3) ul li:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+article:nth-child(3) ul li div:first-child{
+    display: flex;
+    gap: 10px;
+}
+article:nth-child(3) img{
+    width:65px;
+    height: 65px;
+}
+@media (max-width:768px) {
+    article:nth-child(3) ul li{
+        flex-direction: column;
+    }
+    article:nth-child(3) ul li div:first-child{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    article:nth-child(3) ul li .time{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    article:nth-child(3) ul li .time p:first-child{
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+}
+/* third article end */
