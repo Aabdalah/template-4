@@ -74,6 +74,7 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 0 10px;
+    align-items: center;
 }
 .card .footer p{
     font-size: 13px;
@@ -85,6 +86,15 @@
     color: white;
     font-size: 13px;
     background-color: var(--blue);
+}
+@media (max-width:400px) {
+    .card .footer p{
+        font-size: 10px;
+    }
+    .card .footer a{
+        padding: 5px 7px;
+        font-size: 10px;
+    }
 }
 .card .footer a:last-of-type{
     background-color: #f44336;;
